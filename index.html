@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <title>pages</title>
+
+</head>
+<body>
+    <main>
+         <!-- Page de galerie -->
+
+         <section class="Galerie" >
+            <div class="container">
+                <div>
+                    <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Galérie</h1>
+                </div>
+                <div class="row">
+                        <div class="col g-1">
+                            <div class="row h-50">
+                                <img src="photo-1.png" class="img h-100 w-100" alt="photo-1.png">
+                                <img src="photo-5.png" class="img mt-1 h-100 w-100" alt="photo-5.png">
+                            </div>
+                        </div>
+                        <div class="col mt-3 g-1">
+                            <div class="row h-100">
+                            <img src="photo-4.png" class="img h-100 w-100" alt="photo-4.png">
+                            </div>
+                        </div>
+                        <div class="col g-1">
+                            <div class="row h-50 ">
+                                <img src="photo-2.png" class="img h-100 w-100" alt="photo-2.png" >
+                                <img src="photo-3.png" class="img mt-1 h-100 w-100" alt="photo-3.png" >
+                            </div>
+                        </div>
+                        
+                        
+            </div>
+            
+        </section> 
+        <!-- Page d'offre -->
+        
+        <section class="Offres speciales" >
+                
+                <div class="container p-2" style="border: 2px; border-bottom: black;" > 
+                    <div>
+                        <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;"> Offres spéciales</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="offre-1.png" class="img-1 img-fluid" alt="offres spéciales" style="border-radius: 30px;">
+                        </div>
+                        <div class="col-6 p-2 justify-content-center">
+                            <p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Une réduction de - 10 % pour une table de plus de 5 personnes sous rérvation à partir du 11 au 15 Novembre 2024 de 12h à 16h.</p>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 p-2">
+                            <p class="tex" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Buffet à volonté tous les derniers Mercredis et Vendredis du mois de 12h à 18h.</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="offre-2.png" class="img-1 img-fluid justify-content-flex-end " alt="offres spéciales" style="border-radius: 30px;">
+                        </div>
+                    </div>  
+                </div>
+        </section> 
+        <!-- Page de reservation -->
+
+        <section class="Reservation" >
+                
+                <div class="container p-2"> 
+                    <div class="row">
+                        <h1 class="text-center" style="color: black; background-color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Réservation</h1>
+                    </div>
+                    <div class="row">
+                        <form class="row " >
+                            <div class="col-md-6" >
+                            <label for="inputName" class="form-label">Prenom</label>
+                            <input type="text" class="form-control color rounded-3" id="inputName" style="border-color: #FF6600;">
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputName" class="form-label ">Nom</label>
+                            <input type="text" class="form-control color rounded-3" id="inputName" style="border-color: #FF6600;">
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputNumb" class="form-label">Téléphone</label>
+                            <input type="text" class="form-control rounded-3" id="inputNumb" style="border-color: #FF6600;" placeholder="+221 77 123 45 67">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control color rounded-3" id="inputEmail4" style="border-color: #FF6600;" placeholder="3d@gmail.com">
+                            </div>
+                            <div class="md-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Commentaires, préférences ou restrictions alimentaires (facultatif)</label>
+                                <textarea class="form-control color rounded-3" id="exampleFormControlTextarea1" rows="3" style="border-color: #FF6600;"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputtext" class="form-label">Motif de la reservation</label>
+                                <input type="text" class="form-control color rounded-3" id="inputNumb" style="border-color: #FF6600;">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputdate" class="form-label">Date et heure</label>
+                                <input type="datetime" class="form-control color rounded-3" id="inputNumb" placeholder="jj/mois/année - hh:mn" style="border-color: #FF6600;">
+                            </div>
+                            <div class="text-center p-4">
+                                <button type="button" class="text-center rounded-3 " style="background-color: #FF6600;font-family: 'kavon, regular';font-weight: bold; border-color: #FF6600;">Réserver</button>
+                            </div>
+                        </form>  
+                </div>
+        </section> 
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

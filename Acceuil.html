@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les 3D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<!-- Barre de Navigation -->
+    <header class="header">
+        <!-- <div class="logo">
+            <img src="Logo.png" class="logo top-25 start-25 translate-middle" alt="logo">
+        </div> -->
+        <nav class="navbar">
+            <button class="navbar-toggler bg-white text-white position-absolute top-0 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img class="bg-img  position-absolute top-0 start-0" src="Logo.png" width="30" height="30" alt="" srcset="">
+              </a>
+              <ul class="nav justify-content-center align-item-center  position-fixed mt-5 p-2" style="background-color: rgba(50, 40, 40, 0.477); background: linear-gradient(rgba(19, 15, 15, 0.507), rgba(24, 22, 22, 0.438)), ; width: 100%; height: 15%;">
+                <li class="nav-item pe-4">
+                <a class="nav-link" aria-current="page" href="Acceuil.html">Acceuil</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="Menu.html">Menu</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="Gallerie.html">Galerie</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="Offres.html">Offres spéciales</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="Reservation.html">Réservation</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="#temoignages clients">Témoignages clients</a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- Page d'acceuil -->
+        <section id="Acceuil" >
+            <div class="Image" style="font-family: 'kavon, regular'; font-weight: bold;">
+                <!-- <h3 class="text position-absolute bottom-0 end-50 text-white">Les Délices De Diaba</h3> -->
+            </div>
+        </section> 
+        <!-- page menu -->
+<!--         
+        <section class="Menu" id="menu">
+                
+                <div class="container"> 
+                    <div class="row m-10">
+                    <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Menu du jour</h1>
+                </div>
+                <div class="row" style="background-color: #E0E0E0;">
+                    <h2 class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Entrée</h2>
+                </div>
+                <div class="row" style="background-color: #E0E0E0;">
+                    <div class="col-4 p-2"><img src="Crevettes sautées.png" class="img" alt="Crevettes sautées"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;" >Crevettes sautées <br>7000 f</p></div>
+                    <div class="col-4 p-2"><img src="Tartare.png" class="img" alt="Tartare d'avocat et saumon"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Tartare d'avocat et saumon <br>5000 f</p></div>
+                    <div class="col-4 p-2"><img src="Ailes de poulet.png" class="img" alt="Ailes de poulet"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Ailes de poulet<br>6000 f</p></div>
+                </div>
+                <div class="row">
+                    <h2 class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Menu spaciaux</h2>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-2"><img src="Paellas.png" class="img" alt="Paellas"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Paellas<br>12000 f</p></div>
+                    <div class="col-4 p-2"><img src="Spaghetti.png" class="img" alt="Spaghetti bolognaise" ><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Spaghetti bolognaise<br>8000 f</p></div>
+                    <div class="col-4 p-2"><img src="Burger.png" class="img" alt="Burger"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Burger<br>7000 f</p></div>
+                </div>
+                <div class="row" style="background-color: #FFCEAE;">
+                    <h2 class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Desserts</h2>
+                </div>
+                <div class="row" style="background-color: #FFCEAE;">
+                    <div class="col-4 p-2"><img src="Mini gateau.png" class="img" alt="Mini gateau"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Mini gateau<br>6500 f</p></div>
+                    <div class="col-4 p-2"><img src="Crepe.png" class="img" alt="Crêpe au chocolat et fraise"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Crêpe au chocolat et fraise<br>5500 f</p></div>
+                    <div class="col-4 p-2"><img src="glace.png" class="img" alt="Coupe de glace"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Coupe de glace<br>7000 f</p></div>
+                </div>
+                <div class="row bg-light">
+                    <h2 class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Boissons</h2>
+                </div>
+                <div class="row bg-lifht">
+                    <div class="col-4 p-2"><img src="jus bissap.png" class="img" alt="Jus de bissap"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Jus de bissap<br>2000 f</p></div>
+                    <div class="col-4 p-2"><img src="Cocktail.png" class="img" alt="Cocktail"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Cocktail<br>3500 f</p></div>
+                    <div class="col-4 p-2"><img src="Smoothie.png" class="img" alt="Smoothie"><p class="text-center" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Smoothie<br>4000 f</p></div>
+                </div>
+                </div>
+        </section>  -->
+        <!-- Page de galerie -->
+
+        <section class="galerie" id="galerie" >
+            <!-- <div class="container">
+                <div>
+                    <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Galérie</h1>
+                </div>
+                <div class="row">
+                        <div class="col g-1">
+                            <div class="row h-50">
+                                <img src="photo-1.png" class="img h-100 w-100" alt="photo-1.png">
+                                <img src="photo-5.png" class="img mt-1 h-100 w-100" alt="photo-5.png">
+                            </div>
+                        </div>
+                        <div class="col mt-3 g-1">
+                            <div class="row h-100">
+                            <img src="photo-4.png" class="img h-100 w-100" alt="photo-4.png">
+                            </div>
+                        </div>
+                        <div class="col g-1">
+                            <div class="row h-50 ">
+                                <img src="photo-2.png" class="img h-100 w-100" alt="photo-2.png" >
+                                <img src="photo-3.png" class="img mt-1 h-100 w-100" alt="photo-3.png" >
+                            </div>
+                        </div>
+                </div>
+
+            </div> -->
+        </section> 
+        <!-- Page d'offre -->
+        
+        <!-- <section class="Offres speciales" id="offres speciales" >
+                
+                <div class="container" style="border: 2px; border-bottom: black;" > 
+                    <div>
+                        <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;"> Offres spéciales</h1>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-6">
+                            <img src="offre-1.png" class="img-1 img-fluid" alt="offres spéciales" style="border-radius: 30px;">
+                        </div>
+                        <div class="col-6 p-2">
+                            <p class="text" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Une réduction de - 10 % pour une table de plus de 5 personnes sous rérvation à partir du 11 au 15 Novembre 2024 de 12h à 16h.</p>    
+                        </div>
+                    </div>
+                    <div class="row p-5">
+                        <div class="col-6 p-2">
+                            <p class="tex" style="color: black; font-family: 'kavon, regular'; font-weight: bold;">Buffet à volonté tous les derniers Mercredis et Vendredis du mois de 12h à 18h.</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="offre-2.png" class="img-1 img-fluid justify-content-flex-end " alt="offres spéciales" style="border-radius: 30px;">
+                        </div>
+                    </div>  
+                </div>
+        </section>  -->
+        <!-- Page de reservation -->
+<!-- 
+        <section class="reservation" id="reservation">
+                
+            <div class="container"> 
+                <div class="row">
+                    <h1 class="text-center" style="color: black; background-color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Réservation</h1>
+                </div>
+                <div class="row" style="font-family: kavon;">
+                    <form class="row " >
+                        <div class="col-md-6" >
+                            <label for="inputName" class="form-label">Prenom</label>
+                            <input type="text" class="form-control color rounded-3" id="inputName" style="border-color: #FF6600;">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputName" class="form-label ">Nom</label>
+                            <input type="text" class="form-control color rounded-3" id="inputName" style="border-color: #FF6600;">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputNumb" class="form-label">Téléphone</label>
+                            <input type="text" class="form-control rounded-3" id="inputNumb" style="border-color: #FF6600;" placeholder="+221 77 123 45 67">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control color rounded-3" id="inputEmail4" style="border-color: #FF6600;" placeholder="3d@gmail.com">
+                        </div>
+                        <div class="md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label">Commentaires, préférences ou restrictions alimentaires (facultatif)</label>
+                            <textarea class="form-control color rounded-3" id="exampleFormControlTextarea1" rows="3" style="border-color: #FF6600;"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputtext" class="form-label">Motif de la reservation</label>
+                            <input type="text" class="form-control color rounded-3" id="inputNumb" style="border-color: #FF6600;">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputdate" class="form-label">Date et heure</label>
+                            <input type="datetime" class="form-control color rounded-3" id="inputNumb" placeholder="jj/mois/année - hh:mn" style="border-color: #FF6600;">
+                        </div>
+                        <div class="text-center p-4">
+                            <button type="button" class="text-center rounded-3 " style="background-color: #FF6600;font-family: 'kavon, regular';font-weight: bold; border-color: #FF6600;">Réserver</button>
+                        </div>
+                    </form>  
+                </div>
+            </div>
+        </section>  -->
+        <!-- Page de temoignages client -->
+
+        <section class="temoignages clients" id="temoignages clients">
+                
+            <!-- <div class="container"> 
+                <h1 class="text-center mt-5" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Témoignages clients</h1>
+            </div>
+                
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-5 baniere"></div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="commentair-1.png" class="img-fluid pt-2 afro" alt="...">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body" style="font-family: 'kavon, regular'">
+                                    <h5 class="card-title" style="font-weight: bolder;">Marie Jeanne</h5>
+                                    <p class="card-text">Je suis venue à Dakar pour des vacances et j'ai essayé le brunch du dimanche pour la premierefois
+                                        et la nourriture était splendide avec un excellent service client. Je recommanderai surement à tout le monde.
+                                        Je lui donne une note de 10/10.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row" style="border-color: #FF6600;">
+                        <div class="col-md-3">
+                            <img src="commentaire-2.png" class="img-fluid pt-2 couple" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body" style="font-family: 'kavon, regular'">
+                                <h5 class="card-title" style="font-weight: bolder;">Le couple Diabaté</h5>
+                                <p class="card-text">
+                                    Nous sommes trés heureux d'avoir connu les 3D, brunch trés agréable, plats variés et bien présentés. La nourriture est saine.
+                                    Personel trés accueillant, et bonne ambiance musicale.
+                                    Merci nous sommes satisfait.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="border-color: #FF6600;">
+                        <div class="col-md-3">
+                            <img src="commentaire-3.png" class="img-fluid pt-2 africaine" alt="...">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body" style="font-family: kavon">
+                                <h5 class="card-title" style="font-weight: bolder;">Aminatou Diagne </h5>
+                                <p class="card-text">
+                                    Excellent buffet avec une délicieuse sélection de plats locaux!! Marie Noelle a été une excellente hotesse!!
+                                    Je tiens à la félicité pour son soutien et son hospitalité.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   -->
+        </section> 
+        <!-- Page de contact -->
+
+        <!-- <section class="Contact" id="contact" >
+                
+        <div class="container"> 
+
+            <h1 class="text-center" style="color: #FF6600; font-family: 'kavon, regular'; font-weight: bold;">Contactez-nous</h1>
+        </div>
+        <form>
+            <div class="row" style="font-family: kavon;">
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Prénom</div>
+                    <input type="text" class="form-control" style="border-color: #FF6600;" placeholder="Entrez votre Prénom" >
+                </div>
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Nom</div>
+                    <input type="text" class="form-control" style="border-color: #FF6600;" placeholder="Entrez votre Nom" >
+                </div>
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Téléphone</div>
+                    <input type="number" class="form-control" placeholder="ex: 77-000-01-00" style="border-color: #FF6600;">
+                </div>
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Adresse mail</div>
+                    <input type="email" class="form-control" placeholder="exemple@gmail.com" style="border-color: #FF6600;">
+                </div>
+            </div>
+            <div class="row" style="font-family: kavon;">
+                <div class="col-md-12 col-sm px-5">
+                    <div class="input-group mb-3">Commentaire</div>
+                    <textarea name="comment" class="form-control commentaire" style="border-color: #FF6600;" placeholder="Laissez un commentaire"></textarea>
+                </div>
+            </div>
+            <div class="row" style="font-family: kavon;">
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Objectif</div>
+                    <input type="text" class="form-control" style="border-color: #FF6600;" placeholder="Veuillez définir vos objectifs">
+                </div>
+                <div class="col-md-6 col-sm px-5">
+                    <div class="input-group mb-3">Date et Heure</div>
+                    <input type="text" class="form-control" style="border-color: #FF6600;" placeholder="Veuillez saisir la date et l'heure">
+                </div>
+            </div>
+            <div class="text-center p-4">
+                <button type="button" class="text-center rounded-3 " style="background-color: #FF6600;font-family: 'kavon, regular';font-weight: bold; border-color: #FF6600;">Envoyer</button>
+            </div>
+        </form>  
+                </div>
+        </section> 
+    </main> -->
+    <!-- footer : pied de page -->
+    <footer style="background-color: rgb(27, 22, 22);" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 sm py-5" style="color: #fbfbfb; font-family: kavon">
+                    <h4  style="color: #FF6600; font-family: kavon;">Navigation</h4>
+                    <ul>
+                        <li>
+                            <a class="nav-link" aria-current="page" href="Acceuil.html">Acceuil</a>    
+                        </li> 
+                        <li>
+                            <a class="nav-link" href="Menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="Gallerie.html">Galerie</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="Offres.html">Offres spéciales</a>
+                        </li>
+                        <li>
+                             <a class="nav-link" href="Reservation.html">Réservation</a>
+                        </li>
+                        <li>
+                             <a class="nav-link" href="Temoignage.html">Témoignages clients</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 sm py-5" style="color: #fbfbfb; font-family: kavon;">
+                    <h4  style="color: #FF6600">Besoin d'Aide ?</h4>
+                    <ul>
+                        <li>Discuter avec Nous</li>
+                        <li>Centre d'assistance</li>
+                        <li>Contactez Nous</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 sm py-5" style="color: #fbfbfb; font-family: kavon; ">
+                    <h4  style="color: #FF6600">Liens Utiles</h4>
+                    <ul>
+                        <li>Suivre sa commande</li>
+                        <li>Expédition et livraison</li>
+                        <li>Comment commander ?</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 sm py-5" style="color: #fbfbfb; font-family: kavon;">
+                    <h4 style="color:#FF6600">Contact</h4>
+                    <ul>
+                        <li>Adresse : Ouakam en face Monument de la renaissance</li>
+                        <li>Adresse Mail : les3d2024@gmail.com</li>
+                        <li>Telephone : 77 456 76 93 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-white text-center pb-4">@ Les Délices de Diaba 2024 COPYRIGHT</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
